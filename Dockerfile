@@ -29,6 +29,6 @@ RUN apk update \
    make \
    postgresql-client
 
-RUN pip3 install -U \
+RUN pip3 install --trusted-host pypi.python.org --trusted-host files.pythonhosted.org --trusted-host pypi.org -U \
     pip \
     setuptools
